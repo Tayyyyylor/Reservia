@@ -2,15 +2,95 @@
 <html>
 <head>
     <meta charset="utf-8"/>
+    <link rel="stylesheet" href="style.css" />
     <title> Reservia </title>
 </head>
+
+
 <body>
-    <p> <img src="images/Reserviaimg.png" > </p>
+    <header>
+        <!-- Header, logo  -->
+        <p class="ancre"><button>Hébergements</button><button>Activités</button><button class="signup
+            ">S'inscrire</button></p>
+        <p> <img src="images/Reservia.svg" alt="le logo" > </p>
+    </header>
+    <!-- Section 1 avec barre de recherche et filtres-->
+    <section>
     <h1> 
         Trouvez votre hébergement pour des vacances de rêve
     </h1>
-    <p>En plein centre ville ou pleine nature</p>
-    <p><strong>Filtres</strong><button>Économique</button><button>Familial</button><button>Romantique</button><button>Animaux autorisés</button></p>
-    <p><button>Hébergements</button><button>Activités</button><button>S'inscrire</button></p>
+    <p>En plein centre ville ou en pleine nature</p>
+    <input> <button class="recherche"> Rechercher </button>
+   
+    <p class="filtres"> Filtres<button>Économique</button><button>Familial</button><button>Romantique</button><button>Animaux autorisés</button></p>
+    <p>Plus de 500 logements sont disponibles dans cette ville </p>
+</section>
+    <!-- Section 2 offres-->
+    <section class="gris">
+    <p class="marseille"> Hébergements à Marseille </p>
+        <figure>
+            <img src="images/lacannebiere.jpg">
+            <figcaption> Auberge la Cannebière <br>
+            Nuit à partir de 25€
+            </figcaption>
+        </figure>
+    
+        <div>
+            <figure>
+                <img src="images/port.jpg">
+            <figcaption>Hôtel du port <br>
+            Nuit à partir de 52€
+        </figcaption>
+        </figure>
+       </div>
+        <div>
+            <figure>
+                <img src="images/mouettes.jpg">
+           <figcaption> Hôtel Les mouettes <br>
+            Nuit à partir de 76€
+        </figcaption>
+        </figure>  
+        </div>
+        <div> 
+            <figure>
+                <img src="images/mer.jpg">
+            <figcaption>Hôtel de la mer <br>
+            Nuit à partir de 46€
+        </figcaption>
+        </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="images/panier.jpg">
+            <figcaption>Auberge Le Panier <br>
+            Nuit à partir de 23€
+        </figcaption>
+        </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="images/amina.jpg">
+           <figcaption> Hôtel chez Amina <br>
+            Nuit à partir de 96€
+        </figcaption>
+        </figure>
+        </div>
+</section>
+<aside>
+<div class="gris"> 
+    <p> Les plus populaires 
+        <div>Hôtel Le soleil du matin</div>
+        <div>Au coeur de l'eau Chambres d'hôtes</div>
+        <div>Hôtel Tout bleu et Blanc</div>
+    </p>
+</div>
+</aside>
+<div> Activités à Marseille </div>
+<!-- Fin de page avec mentions légales-->
+<footer>
+<div> A propos <ul><li>Fonctionnement du site</li><li>Conditions générales de vente</li><li>Données et confidentialité</li></ul></div>
+<div> Nos hébergements <ul><li>Charte qualité</li><li>Soumettre votre hôtel</li></ul></div>
+<div> Assistance <ul><li>Centre d'aide</li><li>Nous contacter</li></ul></div>
+</footer>
 </body>
 </html>

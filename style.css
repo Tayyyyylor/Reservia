@@ -1,0 +1,47 @@
+@font-face {
+    font-family: "Raleway";
+    src: url("Raleway-VariableFont_wght.ttf");
+}
+*
+{
+    font-family: Raleway;
+}
+.ancre
+{
+    text-align: right;
+}
+.signup
+{
+    color: #0065FC;
+    font-weight: bold;
+}
+h1
+{
+    color: black;
+font-weight: bold;
+}
+.filtres
+{
+    color: black;
+    font-weight: bold;
+}
+.recherche
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+}
+.gris
+{
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+figure
+{
+    border-color: white;
+border-radius: 10px;
+}
+.marseille
+{
+    font-weight: bold;
+}
