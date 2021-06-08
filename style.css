@@ -2,19 +2,23 @@
     font-family: "Raleway";
     src: url("Raleway-VariableFont_wght.ttf");
 }
+
 *
 {
     font-family: Raleway;
 }
+
 .navigation
 {
     text-align: right;
 }
+
 .signup
 {
     color: #0065FC;
     font-weight: bold;
 }
+
 h1
 {
     color: black;
@@ -31,35 +35,56 @@ font-weight: bold;
     color: white;
     font-weight: bold;
 }
-.gris
-{
-    background-color: #F2F2F2;
-    border-radius: 10px;
-    width: 50%;
-}
-.figure
+
+figure
 {
     border-color: white;
 border-radius: 10px;
 }
+
 .marseille
 {
     font-weight: bold;
 }
+
 .main
 {
     background-color: #F2F2F2;
-    border-radius: 10px;
-    width: 50%;
+    border-radius: 30px;
+    width: 70%;
     
 }
 #base
 {
     display: flex;
+    flex-wrap: wrap;
 }
+
 .Offres
 {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 12px;
+    width: 40%;
+    
+}
+
+.photos
+{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.gris
+{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    width: 50%;
+}
+
+#cote
+{
+    position:absolute;
+    right: 30px;
+    width: 20%;
+    
 }
