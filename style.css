@@ -1,13 +1,20 @@
+
+/* La police */
+
 @font-face {
     font-family: "Raleway";
     src: url("Raleway-VariableFont_wght.ttf");
 }
+
+/* J'applique la police à tout le code */
 
 *
 {
     font-family: Raleway;
     
 }
+
+/* Position du logo */
 
 .logo
 {
@@ -17,10 +24,17 @@
   margin: 40px;
 }
 
+/* Ecart de tout le <body> */
+
 .marge
 {
     margin: 40px;
 }
+
+/* HEADER */
+
+
+/* Onglets du site / emplacement, taille, couleur */
 
 .navigation
 {
@@ -30,22 +44,36 @@
     list-style: none;
 }
 
+/* Onglet s'inscrire */
+
 .signup
 {
     color: #0065FC;
     font-weight: bold;
 }
 
+
+/* SECTION NUMERO 1 */
+
+
+/* Titre principal*/
+
 h1
 {
     color: black;
 font-weight: bold;
 }
+
+/* boutons servant de filtres */
+
 .filtres
 {
     color: black;
     font-weight: bold;
 }
+
+/* Spécifique au bouton de Recherche */
+
 .recherche
 {
     background-color: #0065FC;
@@ -53,16 +81,18 @@ font-weight: bold;
     font-weight: bold;
 }
 
-figure
-{
-    border-color: white;
-    border-radius: 10px;
-}
+
+/* SECTION NUMERO 2 */
+
+
+/* Titre section 2 */
 
 .marseille
 {
     font-weight: bold;
 }
+
+/* Cadre gris de la section 2 */
 
 .main
 {
@@ -71,25 +101,31 @@ figure
     width: 70%;
     
 }
-#base
-{
-    display: flex;
-    flex-wrap: wrap;
-}
+
+/* cases blanches  désignant les offres touchant la section 2 et <aside> */
 
 .Offres
 {
     background-color: white;
     border-radius: 20px;
     padding: 12px;
-    width: 40%;
+    width: 180px;
     
 }
 
+#base
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Bordures des photos section 2 */
 .photos
 {
     border-radius: 20px 20px 0px 0px;
 }
+
+/* Cadre gris de aside */
 
 .gris
 {
@@ -97,6 +133,8 @@ figure
     border-radius: 30px;
     width: 50%;
 }
+
+/* Placement de aside */
 
 #cote
 {
