@@ -6,11 +6,28 @@
 *
 {
     font-family: Raleway;
+    
+}
+
+.logo
+{
+  position: absolute;
+  left: 0px;
+  top: 0px;  
+  margin: 40px;
+}
+
+.marge
+{
+    margin: 40px;
 }
 
 .navigation
 {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+    list-style: none;
 }
 
 .signup
@@ -39,7 +56,7 @@ font-weight: bold;
 figure
 {
     border-color: white;
-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .marseille
