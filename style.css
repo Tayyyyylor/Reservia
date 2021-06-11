@@ -26,9 +26,9 @@
 
 /* Ecart de tout le <body> */
 
-.marge
+#bloc_page
 {
-    margin: 40px;
+    margin: auto;
 }
 
 /* HEADER */
@@ -100,6 +100,7 @@ font-weight: bold;
     border-radius: 30px;
     width: 70%;
     
+    
 }
 
 /* cases blanches  désignant les offres touchant la section 2 et <aside> */
@@ -111,13 +112,16 @@ font-weight: bold;
     padding: 12px;
     width: 180px;
     
+    
 }
 
-#base
+#Offres
 {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-around; /* ca na rien changé*/
+    align-items: baseline;
 }
+
 
 /* Bordures des photos section 2 */
 .photos
@@ -141,5 +145,22 @@ font-weight: bold;
     position:absolute;
     right: 30px;
     width: 20%;
+    
+}
+#footer
+{
+    display: flex;
+    justify-content: space-around;
+}
+.footer
+{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-around;
+}
+.puces
+{
+    
+    list-style: none;
     
 }
