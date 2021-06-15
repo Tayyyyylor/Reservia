@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/1d86b861a7.js" crossorigin="anonymous"></script>
         <title> Reservia </title>
     </head>
 
@@ -28,16 +29,19 @@
             </div>
             </header>
 
-<br>
+
 <br>
         <!-- Section 1 avec barre de recherche et filtres-->
 
         <section>
             <h1> Trouvez votre hébergement pour des vacances de rêve </h1>
             <p> En plein centre ville ou en pleine nature </p>
-            <form method="post" action="traitement.php">
-                <p><input type="search" placeholder="Marseille,France"> <button class="recherche"> Rechercher </button> </p>
-            </form>
+            <div class="">
+                
+                <p class="posi"> <i class="fas fa-map-marker-alt"></i><input type="search" placeholder="Marseille,France"> 
+                </p>
+            </div>
+            
             <div class="filtres"> 
                 Filtres<button>Économique</button><button>Familial</button><button>Romantique</button><button>Animaux autorisés</button>
             </div>
@@ -55,9 +59,9 @@
             </div>
         <div id="reponse"> <!--Utiliser les flexbox sur cette div-->
 
-            <div>
+            <div class="Offres">
                 <a href="#"> <!--ajouter une class pour personaliser-->
-                <figure class="Offres">
+                <figure>
                     <img src="images/lacannebieere.jpg" alt="la cannebiere" class="photos"> 
                     <figcaption> 
                         <h2>Auberge la Cannebière </h2>
@@ -67,8 +71,8 @@
                 </a>
             </div>
 
-            <div>
-                <figure class="Offres">
+            <div class="Offres">
+                <figure>
                     <a href="#"><img src="images/port_mini.jpg" alt="port" class="photos"> </a>
                     <figcaption>
                          <a href="#"> Hôtel du port </a><br>
@@ -77,8 +81,8 @@
                 </figure>
             </div>
 
-            <div>
-                <figure class="Offres">
+            <div class="Offres">
+                <figure>
                     <a href="#"><img src="images/mouettes_mini.jpg" alt="img mouettes" class="photos"> </a>
                     <figcaption> 
                         <a href="#"> Hôtel Les mouettes </a><br>
@@ -87,8 +91,8 @@
                 </figure>  
             </div>
 
-            <div> 
-                <figure class="Offres">
+            <div class="Offres"> 
+                <figure>
                     <a href="#"><img src="images/mer_mini.jpg" alt="mer" class="photos"> </a>
                     <figcaption>
                         <a href="#"> Hôtel de la mer </a><br>
@@ -97,8 +101,8 @@
                 </figure>
             </div>
 
-            <div>
-                <figure class="Offres">
+            <div class="Offres">
+                <figure>
                     <a href="#"><img src="images/panier_mini.jpg" alt="panier" class="photos"></a>
                     <figcaption>
                         <a href="#"> Auberge Le Panier </a><br>
@@ -107,8 +111,8 @@
                 </figure>
             </div>
 
-            <div>
-                <figure class="Offres">
+            <div class="Offres">
+                <figure>
                     <a href="#"><img src="images/amina_mini.jpg" alt="amina" class="photos"> </a>
                     <figcaption>
                         <a href="#"> Hôtel chez Amina </a><br>
