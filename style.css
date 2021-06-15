@@ -14,14 +14,11 @@
     
 }
 
-/* Position du logo */
+/* Position du logo en haut a gauche */
 
 .logo
 {
-  position: absolute;
-  left: 0px;
-  top: 0px;  
-  margin: 40px;
+  cursor: pointer;
 }
 
 /* Ecart de tout le <body> */
@@ -32,25 +29,69 @@
 }
 
 /* HEADER */
+.conteneurheader
+{
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
 
 
 /* Onglets du site / emplacement, taille, couleur */
 
+header ul 
+{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: auto;
+    color: #0065fc;
+  }
+
+  header ul li a:hover {
+    border-top: 2px solid #0065fc;
+    padding-top: 21px;
+    color: #0065fc;
+  }
+  
+  header ul li {
+    margin-left: 28px;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  /* Onglet s'inscrire */
+  .inscrire a {
+    color: #0065fc;
+    margin-right: 0%;
+  }
+  
+  .inscrire a:hover {
+    border-top: 2px solid #0065fc;
+    padding-top: 21px;
+  }
+  
+  .inscrire {
+    padding-left: 28px;
+  }
+
 .navigation
 {
     display: flex;
-    justify-content: flex-end;
-    justify-content: space-around;
-    list-style: none;
+    margin-right: 3%;
 }
 
-/* Onglet s'inscrire */
-
-.signup
+.inscrire
 {
     color: #0065FC;
-    font-weight: bold;
+    margin-right: 0%;
 }
+
+
+
 
 
 /* SECTION NUMERO 1 */
@@ -122,6 +163,12 @@ font-weight: bold;
     align-items: baseline;
 }
 
+#reponse
+{
+    display: flex;
+    justify-content: space-around; /* ca na rien changé*/
+    align-items: baseline;
+}
 
 /* Bordures des photos section 2 */
 .photos
