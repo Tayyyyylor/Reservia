@@ -28,7 +28,7 @@
     margin: auto;
 }
 
-/* HEADER */
+/* HEADER  placement */
 
 .conteneurheader
 {
@@ -94,6 +94,9 @@ header ul
     margin-right: 3%;
 }
 
+
+/* SECTION NUMERO 1 barre de recherche*/
+
 .larecherche
 {
     display: inline-flex;
@@ -101,10 +104,6 @@ header ul
     align-items: center;
 }
 
-
-
-
-/* SECTION NUMERO 1 */
 
 
 /* Titre principal*/
@@ -138,13 +137,6 @@ font-weight: bold;
 
 /* Titre section 2 */
 
-.marseille
-{
-    font-weight: bold;
-}
-
-
-
 .principal
 {
     display: flex;
@@ -162,20 +154,10 @@ font-weight: bold;
     margin: 0 25px 0 0;
 }
 
-
-/* cases blanches  désignant les offres touchant la section 2 et <aside> */
-
-.Offres
+.marseille
 {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    width: 30%;
-    box-sizing: border-box;
-    margin: 0 5px 20px 5px;
+    font-weight: bold;
 }
-
-
 
 #reponse
 {
@@ -187,22 +169,44 @@ font-weight: bold;
     align-content: space-around;
 }
 
-.etoiles
+/* cases blanches  désignant les offres touchant la section 2 et <aside> */
+
+.Offres
 {
-    margin: 0 0.75rem 0.25rem 0.75rem;
+    background-color: white;
+    border-radius: 20px;
+    width: 30%;
+    margin: 0 5px 20px 5px;
+    box-shadow: 0 0 16px #0000002e;
+}
+.Offres h4 
+{
+    margin: 3px -39px;
+}
+.Offres p
+{
+    margin: 3px -39px;  
+}
+/* notation avec etoiles */
+
+.iconeEtoilesNotation
+{
 }
 
-.hostingMainCardGradeIcon[data-active=true] {
+.couleurEtoiles[data-active=true] 
+    {
     color: #0065FC;
-  }
-  .hostingMainCardGradeIcon[data-active=false] {
+    }
+  .couleurEtoiles [data-active=false] {
     color: #d9d9d9;
   }
+
 
 /* Bordures des photos section 2 */
 .photos
 {
     border-radius: 20px 20px 0px 0px;
+    margin: 0px 0px 0px -25px;
 }
 
 /* Cadre gris de aside */
@@ -215,18 +219,77 @@ font-weight: bold;
     padding: 20px;
   
 }
+
+/* offres onglet aside */
+
 .offres2
 {
 background-color: white;
-  padding: 0.375rem;
   border-radius: 1.25rem;
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
-  cursor: pointer;
-  box-sizing: border-box;
-  height: 15%;
+  height: 17%;
 }
-/* Placement de aside */
+.photoscotes
+{
+    border-radius: 20px 0px 0px 20px;
+    margin: 2px 0px 0px -37px;
+}
+/* section activités a marseille */
+
+.activites
+{
+    display: grid;
+    column-gap: 2rem;
+    margin: 4rem 0;
+}
+
+.activ
+{
+    
+  box-shadow: 0 0 20px #0000002e;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.1s;
+}
+
+.activ1
+{
+    grid-row: 2/7;
+    grid-column: 1/2;
+}
+
+.activ2
+{
+    grid-column: 2/3;
+    grid-row: 2/5;
+}
+
+.activ3
+{
+    grid-column: 3/4;
+    grid-row: 2/7;
+}
+
+.activ4
+{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.activ5
+{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.activ6
+{
+    grid-column: 4/5;
+    grid-row: 4/7;
+}
 
 
 #footer
