@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css" />
@@ -31,7 +31,7 @@
 
 
 <br>
-        <!-- Section 1 avec barre de recherche et filtres-->
+            <!-- Section 1 avec barre de recherche et filtres-->
 
             <section>
                 <h1 class="grostitre"> Trouvez votre hébergement pour des vacances de rêve </h1>
@@ -47,6 +47,7 @@
                 
                 <div class="SectionFiltre"> 
                     <h4 class="NomFiltre">Filtres </h4>
+
                     <div class="FormeFiltre"> 
                         <div class="IconeFiltre">
                             <i class="fas fa-money-bill-wave IconeBleu"></i>
@@ -86,19 +87,19 @@
 
 
 
-        <!-- Section 2 offres-->
+            <!-- Section 2 offres-->
 
             <main class="principal">
                 <div id="main">
-                    <div class="marseille">
-                        <h1> Hébergements à Marseille </h1>
+                    <div class="Gras">
+                        <h2> Hébergements à Marseille </h2>
                     </div>
                     <div id="reponse"> <!--Utiliser les flexbox sur cette div-->
                         <div class="Offres">
                             <a href="#"> <!--ajouter une class pour personaliser-->
                                 <figure>
                                     <img src="images/LaCannebiereMini.jpg" alt="Image de la chambre avec vu et lit superposés" class="photos"> 
-                                    <figcaption> 
+                                    <figcaption class="placement"> 
                                         <h4>Auberge la Cannebière </h4>
                                         <p> Nuit à partir de 25€ </p>
                                     </figcaption>
@@ -117,7 +118,7 @@
                             <a href="#"> 
                                 <figure>
                                     <img src="images/HotelDuPortMini.jpg" alt="Chambre avec fenêtre ouverte avec deux lits" class="photos">
-                                    <figcaption>
+                                    <figcaption class="placement">
                                         <h4> Hôtel du port </h4>
                                         <p> Nuit à partir de 52€ </p>
                                     </figcaption>
@@ -137,7 +138,7 @@
                             <a href="#">
                                 <figure>
                                     <img src="images/HotelLesMouettesMini.jpg" alt="Chambre avec vu dressing, miroir et lit" class="photos"> 
-                                    <figcaption> 
+                                    <figcaption class="placement"> 
                                         <h4> Hôtel Les mouettes </h4>
                                         <p> Nuit à partir de 76€ </p>
                                     </figcaption>
@@ -156,7 +157,7 @@
                             <a href="#">
                                 <figure>
                                     <img src="images/HotelDeLaMerMini.jpg" alt="Chambre vu du lit et dessus de lit avec tableau de la mer" class="photos">
-                                    <figcaption>
+                                    <figcaption class="placement">
                                         <h4> Hôtel de la mer </h4>
                                         <p> Nuit à partir de 46€ </p>
                                     </figcaption>
@@ -175,12 +176,12 @@
                             <a href="#">
                                 <figure>
                                     <img src="images/AubergePanierMini.jpg" alt="Chambre avec 2 lits superposés" class="photos">
-                                    <figcaption>
+                                    <figcaption class="placement">
                                         <h4> Auberge Le Panier </h4>
                                         <p> Nuit à partir de 23€ </p>
                                     </figcaption>
                                 </figure>
-                                <div class="etoiles">
+                                <div class="iconeEtoilesNotation">
                                     <i class="fas fa-star couleurEtoiles" data-active="true"></i>
                                     <i class="fas fa-star couleurEtoiles" data-active="true"></i>
                                     <i class="fas fa-star couleurEtoiles" data-active="true"></i>
@@ -194,7 +195,7 @@
                             <a href="#">
                                 <figure>
                                     <img src="images/HotelChezAminaMini.jpg" alt="Chambre vu sur fenêtre avec lit et bureau au premier plan" class="photos"> 
-                                    <figcaption>
+                                    <figcaption class="placement">
                                         <h4> Hôtel chez Amina </h4>
                                         <p>Nuit à partir de 96€</p>
                                     </figcaption>
@@ -208,56 +209,82 @@
                                 </div>
                             </a>
                         </div>
+
                         <p>
-                            <a href="#"> Afficher plus </a>
+                            <a href="#" class="Gras "> Afficher plus </a>
                         </p>
                     </div>
                 </div>
     
 
-        <!-- Section latérale -->
+                <!-- Section latérale -->
 
                 <aside id="gris">
-                    <div id="reponse2">
-                    <h1> Les plus populaires </h1>
-                    <div class="offres2">
-                        <a href="#">
-                            <figure>
-                                <img src="images/HotelLeSoleilDuMatinMini.jpg" alt="" class="photoscotes"> 
-                                
-                                <figcaption class="centragetxt">
-                                    <h4> Hôtel Le soleil du matin </h4>
-                                    <p> Nuit à partir de 128€ </p>
-                                </figcaption>
-                            
-                            </figure>
-                        </a>
-                    </div>
+                    
+                        <h2 class="LesPlusPopulaires"> Les plus populaires 
+                            <i class="fas fa-chart-line"></i>
+                        </h2>
 
-                    <div class="offres2">
-                        <a href="#">
-                            <figure>
-                                <img src="images/AuCoeurDeLeauMini.jpg" alt="" class="photoscotes">
-                                <figcaption>
-                                    <h4> Au coeur de l'eau Chambres d'hôtes </h4>
-                                    <p> Nuit à partir de 71€</p>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
+                        <div class="offres2">
+                            <a href="#" class="Agencement">
+                                <div>
+                                    <img src="images/HotelLeSoleilDuMatinMini.jpg" alt="" class="photoscotes"> 
+                                </div>
+                                <div class="centragetxt">
+                                    <h4 class="placement"> Hôtel Le soleil du matin </h4>
+                                    <p class="placement2"> Nuit à partir de 128€ </p>
+                                    <div class="EspaceVide"></div>
+                                    <div class="iconeEtoilesNotation">
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                    </div>
+                                </div>   
+                            </a>
+                        </div>
 
-                    <div class="offres2">
-                        <a href="#">
-                            <figure>
-                                <img src="images/HotelBleuEtBlancMini.jpg" alt="" class="photoscotes">
-                                <figcaption>
-                                    <h4> Hôtel Tout bleu et Blanc </h4>
-                                    <p>Nuit à partir de 68€</p>
-                                </figcaption>
-                            </figure>
-                        </a>
-                    </div>
-                </div>
+                        <div class="offres2">
+                            <a href="#" class="Agencement">
+                                <div>
+                                    <img src="images/AuCoeurDeLeauMini.jpg" alt="" class="photoscotes">
+                                </div>
+                                <div class="centragetxt">
+                                    <h4 class="placement"> Au coeur de l'eau Chambres d'hôtes </h4>
+                                    <p class="placement2"> Nuit à partir de 71€</p>
+                                    <div class="EspaceVide"></div>
+                                    <div class="iconeEtoilesNotation">
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="false"></i>
+                                    </div> 
+                                </div>    
+                            </a>
+                        </div>
+
+                        <div class="offres2">
+                            <a href="#" class="Agencement">
+                                <div>
+                                    <img src="images/HotelBleuEtBlancMini.jpg" alt="" class="photoscotes">
+                                </div>
+                                <div class="centragetxt">
+                                    <h4 class="placement"> Hôtel Tout bleu et Blanc </h4>
+                                    <p class="placement2">Nuit à partir de 68€</p>
+                                    <div class="EspaceVide"></div>
+                                    <div class="iconeEtoilesNotation">
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="true"></i>
+                                        <i class="fas fa-star couleurEtoiles" data-active="false"></i>
+                                    </div> 
+                                </div> 
+                            </a>
+                        </div>
+                    
                 </aside>
             </main>
 
@@ -265,7 +292,8 @@
 
 
             <section class="activites" id="activites">
-                <h1> Activités à Marseille </h1>
+
+                <h2> Activités à Marseille </h2>
 
                 <a href="#" class="activ activ1">
                     <div class="DimensionPhoto">
@@ -308,13 +336,15 @@
                     </div>
                     <h3 class="TitreActivite"> Parc Longchamp </h3>   
                 </a>
+
             </section>
     
 
-        <!-- Fin de page avec mentions légales-->
+            <!-- Fin de page avec mentions légales-->
 
             <footer id="footer">
                 <div class="footer1">
+
                     <div class="footer2">
                         <h4>A propos </h4>
                         <a href="#">Fonctionnement du site </a><br>
@@ -333,8 +363,10 @@
                         <a href="#">Centre d'aide</a><br>
                         <a href="#">Nous contacter</a>
                     </div>
+
                 </div>
             </footer>
+
         </div>
     </body>
 </html>
