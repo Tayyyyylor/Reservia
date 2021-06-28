@@ -338,6 +338,12 @@ background-color: white;
     margin: 4rem 0;
 }
 
+#activites
+{
+  grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+}
+
 .activ
 {
     
@@ -363,8 +369,9 @@ background-color: white;
 {
   margin: 1.2rem 1.5rem;
 }
-.VieuxPort
+.TaillePhoto
 {
+  position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
