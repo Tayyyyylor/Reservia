@@ -97,43 +97,129 @@ header ul
 
 /* SECTION NUMERO 1 barre de recherche*/
 
-.larecherche
+
+.grostitre
+{
+    font-size: 1.75em;
+    margin: .67em 0;
+}
+
+.soustitre
+{
+  margin-top: -1em;
+}
+
+.BarreDeRecherche
 {
     display: inline-flex;
-    margin-top: 15px;
-    align-items: center;
 }
 
-
-
-/* Titre principal*/
-
-h1
+.iconeGPS
 {
-    color: black;
-font-weight: bold;
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem; 
 }
 
-/* boutons servant de filtres */
-
-.filtres
+.BarreDeSaisie
 {
-    color: black;
-    font-weight: bold;
+  border-right: none;
+  border-left: none;
+  border-top: #F2F2F2 1px solid;
+  border-bottom: #F2F2F2 1px solid;
+  padding: 0 1.5rem;
+  width: 14rem;
+  font-size: 1rem;
+  font-weight: bold;
 }
+
+
 
 /* Spécifique au bouton de Recherche */
 
 .recherche
 {
-    background-color: #0065FC;
-    color: white;
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0 1rem 1rem 0;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+}
+
+
+
+
+/* boutons servant de filtres */
+
+.SectionFiltre
+{
+    display: flex;
+    margin-top: 2rem;
+    
+}
+
+.NomFiltre
+{
+  margin: 0 2rem 1rem 0;
+    display: flex;
+    align-items: center;
+}
+.FormeFiltre
+{
+  display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    transition-duration: 0.1s;
     font-weight: bold;
+}
+.IconeFiltre
+{
+  background-color: #DEEBFF;
+    border-radius: 100%;
+    min-height: 3.5rem;
+    min-width: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+}
+
+.IconeBleu
+{
+  color: blue;
+}
+
+.EspaceFiltre
+{
+  margin: 0 1rem;
+}
+
+.PhraseInfo
+{
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.IconeInfo
+{
+  
+    min-height: 2rem;
+    min-width: 2rem;
+    border: solid 1px #d9d9d9;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
 }
 
 
 /* SECTION NUMERO 2 */
-
 
 /* Titre section 2 */
 
@@ -157,16 +243,16 @@ font-weight: bold;
 .marseille
 {
     font-weight: bold;
+
 }
 
 #reponse
 {
     display: flex;
     justify-content: space-around;
-    align-items: stretch;
-    flex-direction: row;
+   
     flex-wrap: wrap;
-    align-content: space-around;
+    
 }
 
 /* cases blanches  désignant les offres touchant la section 2 et <aside> */
@@ -219,22 +305,30 @@ font-weight: bold;
     padding: 20px;
   
 }
-
+#reponse2
+{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
 /* offres onglet aside */
 
 .offres2
 {
 background-color: white;
-  border-radius: 1.25rem;
+  border-radius: 20px;
   box-shadow: 0 0 16px #0000002e;
   transition-duration: 0.1s;
   height: 17%;
 }
+
 .photoscotes
 {
     border-radius: 20px 0px 0px 20px;
     margin: 2px 0px 0px -37px;
 }
+
+
 /* section activités a marseille */
 
 .activites
@@ -260,7 +354,21 @@ background-color: white;
     grid-row: 2/7;
     grid-column: 1/2;
 }
-
+.DimensionPhoto
+{
+  position: relative;
+  flex: 1;
+}
+.TitreActivite
+{
+  margin: 1.2rem 1.5rem;
+}
+.VieuxPort
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 .activ2
 {
     grid-column: 2/3;
