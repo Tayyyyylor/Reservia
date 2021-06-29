@@ -1,35 +1,28 @@
 
 /* La police */
 
-@font-face {
-    font-family: "Raleway";
+@font-face 
+{
+    font-family: "Raleway sans serif" ;
     src: url("Raleway-VariableFont_wght.ttf");
 }
 
 /* J'applique la police à tout le code */
-
 *
 {
-    font-family: Raleway;
-    
+    font-family: Raleway; 
 }
 
-/* Position du logo en haut a gauche */
 
-.logo
-{
-  cursor: pointer;
-}
+
 
 /* agit sur tout le body */
-
 #bloc_page
 {
     margin: auto;
 }
 
 /* HEADER  placement */
-
 .conteneurheader
 {
     display: flex;
@@ -38,9 +31,20 @@
     align-items: center;
 }
 
+/* Position du logo en haut a gauche */
+.logo
+{
+  cursor: pointer;
+}
 
-/* Parametres pour nav  */
+/* Section Nav */
+.navigation
+{
+    display: flex;
+    margin-right: 3%;
+}
 
+/* Parametres Nav couleur bleu */
 header ul 
 {
     display: flex;
@@ -50,64 +54,59 @@ header ul
     margin-left: auto;
     color: #0065fc;
   }
-/* Applique leffet de  survole*/
 
-  header ul li a:hover {
+/* Applique leffet de  survole*/
+  header ul li a:hover 
+  {
     border-top: 2px solid #0065fc;
     padding-top: 21px;
     color: #0065fc;
   }
   
-  header ul li {
+  header ul li 
+  {
     margin-left: 28px;
   }
 
-  a {
+  a 
+  {
     text-decoration: none;
     color: black;
   }
   
   /* Onglet s'inscrire */
-
-  .inscrire a {
+  .inscrire a 
+  {
     color: #0065fc;
     margin-right: 0%;
   }
   
-  .inscrire a:hover {
+  .inscrire a:hover 
+  {
     border-top: 2px solid #0065fc;
     padding-top: 21px;
   }
   
-  .inscrire {
+  .inscrire 
+  {
     padding-left: 28px;
-  }
-
-  .inscrire
-{
     color: #0065FC;
     margin-right: 0%;
+  }
+
+
+
+
+/* SECTION NUMERO 1 barre de recherche */
+.TitrePrincipal
+{
+    font-size: 28px;
+    margin: 15px 0;
 }
 
-.navigation
+.SousTitre
 {
-    display: flex;
-    margin-right: 3%;
-}
-
-
-/* SECTION NUMERO 1 barre de recherche*/
-
-
-.grostitre
-{
-    font-size: 1.75em;
-    margin: .67em 0;
-}
-
-.soustitre
-{
-  margin-top: -1em;
+  margin-top: -16px;
 }
 
 .BarreDeRecherche
@@ -122,7 +121,7 @@ header ul
     border-radius: 1rem 0 0 1rem; 
 }
 
-.BarreDeSaisie
+.ChampDeSaisie
 {
   border-right: none;
   border-left: none;
@@ -138,7 +137,7 @@ header ul
 
 /* Spécifique au bouton de Recherche */
 
-.recherche
+.BoutonRecherche
 {
   background-color: #0065FC;
   color: white;
@@ -149,27 +148,23 @@ header ul
   font-size: 1rem;
 }
 
-
-
-
 /* boutons servant de filtres */
-
 .SectionFiltre
 {
     display: flex;
     margin-top: 2rem;
-    
 }
 
-.NomFiltre
+.TitreFiltres
 {
   margin: 0 2rem 1rem 0;
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
+
 .FormeFiltre
 {
-  display: flex;
+    display: flex;
     align-items: center;
     margin-right: 2rem;
     border: 2px solid #d9d9d9;
@@ -184,14 +179,12 @@ header ul
   color: #fff;
   transition: 0.4s ease-in-out;
   cursor: pointer;
-  
 }
-
 
 
 .IconeFiltre
 {
-  background-color: #DEEBFF;
+    background-color: #DEEBFF;
     border-radius: 100%;
     min-height: 3.5rem;
     min-width: 3.5rem;
@@ -220,7 +213,6 @@ header ul
 
 .IconeInfo
 {
-  
     min-height: 2rem;
     min-width: 2rem;
     border: solid 1px #d9d9d9;
@@ -233,10 +225,9 @@ header ul
 
 
 /* SECTION NUMERO 2 */
-
 /* Titre section 2 */
 
-.principal
+.MainClass
 {
     display: flex;
   margin: 25px 0 50px;
@@ -244,7 +235,7 @@ header ul
 
 /* bloc gris section 2 */
 
-#main
+#Main
 {
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -259,18 +250,16 @@ header ul
 
 }
 
-#reponse
+#Resultats
 {
     display: flex;
     justify-content: space-around;
-   
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;  
 }
 
 /* cases blanches  désignant les offres touchant la section 2 et <aside> */
 
-.Offres
+.OffresMain
 {
     background-color: white;
     border-radius: 20px;
@@ -278,40 +267,54 @@ header ul
     margin: 0 5px 20px 5px;
     box-shadow: 0 0 16px #0000002e;
 }
-.Offres h4 
+.OffresMain :hover
+{
+  transform: scale(1.05);
+  
+}
+.OffresMain h4 
 {
     margin: 3px -39px;
 }
-.Offres p
+.OffresMain p
 {
     margin: 3px -39px;  
 }
-/* notation avec etoiles */
-
-.iconeEtoilesNotation
-{
-  margin: 0 0.75rem 0.25rem 0.75rem;
-}
-
-.couleurEtoiles[data-active=true] 
-    {
-    color: #0065FC;
-    }
-  .couleurEtoiles [data-active=false] {
-    color: #d9d9d9;
-  }
-
 
 /* Bordures des photos section 2 */
-.photos
+.PhotosMain
 {
     border-radius: 20px 20px 0px 0px;
     margin: 0px 0px 0px -25px;
 }
 
+.PlacementTxt
+{
+  margin: 0.25rem 0.75rem 0 0.75rem;
+}
+
+/* notation avec etoiles */
+
+.IconeEtoilesNotation
+{
+  margin: 0 0.75rem 0.25rem 0.75rem;
+}
+
+.CouleurEtoiles[data-active=true] 
+    {
+    color: #0065FC;
+    }
+.CouleurEtoiles [data-active=false] 
+  {
+    color: #d9d9d9;
+  }
+
+
+
+
 /* Cadre gris de aside */
 
-#gris
+#CadreGrisAside
 {
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -319,12 +322,10 @@ header ul
     padding: 20px;
     display: grid;
     row-gap: 2rem;
-    
-  
 }
 
 
-.LesPlusPopulaires
+.TitreAside
 {
   margin: 20px 0px -40px 0px;
   display: flex;
@@ -332,7 +333,7 @@ header ul
 }
 /* offres onglet aside */
 
-.offres2
+.OffresAside
 {
   background-color: white;
   border-radius: 20px;
@@ -343,6 +344,10 @@ header ul
   height: 73%;
   
 }
+.OffresAside :hover
+{
+  transform: scale(1.05);
+}
 
 .Agencement
 {
@@ -351,50 +356,44 @@ header ul
     height: 100%;
     overflow: auto;
 }
-.photoscotes
+.PhotosAside
 {
   border-radius: 1rem 0 0 1rem;
   
 }
 
-.centragetxt
+.CentrageTxt
 {
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
 }
 
-.placement
-{
-  margin: 0.25rem 0.75rem 0 0.75rem;
-}
-
-.placement2
+.PlacementPrix
 {
   margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
-
-
 
 .EspaceVide
 {
   flex: 1;
 }
+
 /* section activités a marseille */
 
-.activites
+.Activites
 {
     display: grid;
     column-gap: 2rem;
     margin: 4rem 0;
 }
 
-#activites
+#ActivitesGrid
 {
   grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
 }
 
-.activ
+.BlocDesActivites
 {
     
   box-shadow: 0 0 20px #0000002e;
@@ -405,76 +404,80 @@ header ul
   transition-duration: 0.1s;
 }
 
-.activ1
-{
-    grid-row: 2/7;
-    grid-column: 1/2;
-}
 .DimensionPhoto
 {
   position: relative;
   flex: 1;
 }
-.TitreActivite
-{
-  margin: 1.2rem 1.5rem;
-}
+
 .TaillePhoto
 {
-  position: absolute;
+    position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-.activ2
+
+.TitreActivite
+{
+  margin: 1.2rem 1.5rem;
+}
+
+.VieuxPort
+{
+    grid-row: 2/7;
+    grid-column: 1/2;
+}
+
+.FortDePomegues
 {
     grid-column: 2/3;
     grid-row: 2/5;
 }
 
-.activ3
+.ParcNationalDesCalanques
 {
     grid-column: 3/4;
     grid-row: 2/7;
 }
 
-.activ4
+.NotreDameDeLaGarde
 {
     grid-column: 4/5;
     grid-row: 2/3;
 }
 
-.activ5
+.IlesDuFrioul
 {
     grid-column: 2/3;
     grid-row: 6/7;
 }
 
-.activ6
+.ParcLongchamp
 {
     grid-column: 4/5;
     grid-row: 4/7;
 }
 
 
-#footer
+#Footer
 {
     background-color: #F2F2F2;
-  width: 100%;
+    width: 100%;
 }
-.footer1
+
+.PlacementColonnes
 {
-    display: flex;
-    max-width: 100%;
-    width: 1440px;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
-    
+  display: flex;
+  max-width: 100%;
+  width: 1440px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box; 
 }
-.footer2
+
+.Colonnes
 {
-    width: 30%;
+  width: 30%;
   padding: 2rem 2rem;
-  
 }
