@@ -3,11 +3,12 @@
 
 @font-face 
 {
-    font-family: "Raleway sans serif" ;
+    font-family: "Raleway" ;
     src: url("Raleway-VariableFont_wght.ttf");
 }
 
 /* J'applique la police à tout le code */
+
 *
 {
     font-family: Raleway; 
@@ -26,7 +27,7 @@
 .conteneurheader
 {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
@@ -235,7 +236,7 @@ header ul
 
 /* bloc gris section 2 */
 
-#Main
+.Main
 {
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -284,6 +285,7 @@ header ul
 /* Bordures des photos section 2 */
 .PhotosMain
 {
+    
     border-radius: 20px 20px 0px 0px;
     margin: 0px 0px 0px -25px;
 }
@@ -314,7 +316,7 @@ header ul
 
 /* Cadre gris de aside */
 
-#CadreGrisAside
+.CadreGrisAside
 {
     background-color: #f2f2f2;
     border-radius: 15px;
@@ -383,21 +385,16 @@ header ul
 .Activites
 {
     display: grid;
-    column-gap: 2rem;
-    margin: 4rem 0;
+    margin: 64px 0;
 }
 
-#ActivitesGrid
-{
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
-}
+
 
 .BlocDesActivites
 {
     
   box-shadow: 0 0 20px #0000002e;
-  border-radius: 1rem;
+  border-radius: 16px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -420,7 +417,7 @@ header ul
 
 .TitreActivite
 {
-  margin: 1.2rem 1.5rem;
+  margin: 19px 24px;
 }
 
 .VieuxPort
@@ -472,12 +469,12 @@ header ul
   max-width: 100%;
   width: 1440px;
   margin: auto;
-  padding: 0 2rem;
+  padding: 0 32px;
   box-sizing: border-box; 
 }
 
 .Colonnes
 {
   width: 30%;
-  padding: 2rem 2rem;
+  padding: 32px 32px;
 }
