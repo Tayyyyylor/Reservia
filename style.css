@@ -2,476 +2,64 @@
 /* La police */
 
 @font-face 
-{
-    font-family: "Raleway" ;
+  {
+    font-family: "Raleway";
     src: url("Raleway-VariableFont_wght.ttf");
-}
-
-/* J'applique la police à tout le code */
+    src: url("Raleway-Bold.ttf")
+  }
 
 *
-{
-    font-family: Raleway; 
-}
-
-
-
-
-/* agit sur tout le body */
-
-
-/* HEADER  placement */
-.conteneurheader
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* Position du logo en haut a gauche */
-.logo
-{
-  cursor: pointer;
-}
-
-/* Section Nav */
-.navigation
-{
-    display: flex;
-    margin-right: 3%;
-}
-
-/* Parametres Nav couleur bleu */
-header ul 
-{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    margin-left: auto;
-    color: #0065fc;
-  }
-
-/* Applique leffet de  survole*/
-  header ul li a:hover 
   {
-    border-top: 2px solid #0065fc;
-    padding-top: 21px;
-    color: #0065fc;
-  }
-  
-  header ul li 
-  {
-    margin-left: 28px;
+    font-family: Raleway, Arial, Helvetica, sans-serif; 
   }
 
-  a 
+a 
   {
     text-decoration: none;
     color: black;
   }
-  
-  /* Onglet s'inscrire */
-  .inscrire a 
+
+  .BarreDeRecherche
   {
-    color: #0065fc;
-    margin-right: 0%;
-  }
-  
-  .inscrire a:hover 
-  {
-    border-top: 2px solid #0065fc;
-    padding-top: 21px;
-  }
-  
-  .inscrire 
-  {
-    padding-left: 28px;
-    color: #0065FC;
-    margin-right: 0%;
-  }
-
-
-
-
-/* SECTION NUMERO 1 barre de recherche */
-.TitrePrincipal
-{
-    font-size: 28px;
-    margin: 15px 0;
-}
-
-.SousTitre
-{
-  margin-top: -16px;
-}
-
-.BarreDeRecherche
-{
     display: inline-flex;
-}
-
-.iconeGPS
-{
-    background-color: #F2F2F2;
-    padding: 1rem 1.25rem;
-    border-radius: 1rem 0 0 1rem; 
-}
-
-.ChampDeSaisie
-{
-  border-right: none;
-  border-left: none;
-  border-top: #F2F2F2 1px solid;
-  border-bottom: #F2F2F2 1px solid;
-  padding: 0 1.5rem;
-  width: 14rem;
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-
-
-/* Spécifique au bouton de Recherche */
-
-.BoutonRecherche
-{
-  background-color: #0065FC;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 0 1rem 1rem 0;
-  padding: 0 1.5rem;
-  font-size: 1rem;
-}
-
-/* boutons servant de filtres */
-.SectionFiltre
-{
-    display: flex;
-    margin-top: 2rem;
-}
-
-.TitreFiltres
-{
-  margin: 0 2rem 1rem 0;
-  display: flex;
-  align-items: center;
-}
-
-.FormeFiltre
-{
-    display: flex;
-    align-items: center;
-    margin-right: 2rem;
-    border: 2px solid #d9d9d9;
-    border-radius: 2rem;
-    transition-duration: 0.1s;
-    font-weight: bold;
-}
-
-.FormeFiltre :hover
-{
-  background: #0065fc;
-  color: #fff;
-  transition: 0.4s ease-in-out;
-  cursor: pointer;
-}
-
-
-.IconeFiltre
-{
-    background-color: #DEEBFF;
-    border-radius: 100%;
-    min-height: 3.5rem;
-    min-width: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: -2px;
-}
-
-.IconeBleu
-{
-  color: blue;
-}
-
-.EspaceFiltre
-{
-  margin: 0 1rem;
-}
-
-.PhraseInfo
-{
-  display: flex;
-  align-items: center;
-  margin: 1rem 0 2rem 0;
-}
-
-.IconeInfo
-{
-    min-height: 2rem;
-    min-width: 2rem;
-    border: solid 1px #d9d9d9;
-    border-radius: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-}
-
-
-/* SECTION NUMERO 2 */
-/* Titre section 2 */
-
-.MainClass
-{
-    display: flex;
-  margin: 25px 0 50px;
-}
-
-/* bloc gris section 2 */
-
-.Main
-{
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    width: 62%;
-    padding: 20px;
-    margin: 0 25px 0 0;
-}
-
-.Gras
-{
-    font-weight: bold;
-
-}
-
-#Resultats
-{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;  
-}
-
-/* cases blanches  désignant les offres touchant la section 2 et <aside> */
-
-.OffresMain
-{
-    background-color: white;
-    border-radius: 20px;
-    width: 30%;
-    margin: 0 5px 20px 5px;
-    box-shadow: 0 0 16px #0000002e;
-}
-.OffresMain :hover
-{
-  transform: scale(1.05);
-  
-}
-.OffresMain h4 
-{
-    margin: 3px -39px;
-}
-.OffresMain p
-{
-    margin: 3px -39px;  
-}
-
-/* Bordures des photos section 2 */
-.PhotosMain
-{
-    
-    border-radius: 20px 20px 0px 0px;
-    margin: 0px 0px 0px -25px;
-}
-
-.PlacementTxt
-{
-  margin: 0.25rem 0.75rem 0 0.75rem;
-}
-
-/* notation avec etoiles */
-
-.IconeEtoilesNotation
-{
-  margin: 0 0.75rem 0.25rem 0.75rem;
-}
-
-.CouleurEtoiles[data-active=true] 
-    {
-    color: #0065FC;
-    }
-.CouleurEtoiles [data-active=false] 
-  {
-    color: #d9d9d9;
   }
 
+  .IconeBleu
+        {
+        color: blue;
+        }
 
+    .PhraseInfo
+        {
+        display: flex;
+        align-items: center;
+        margin: 16px 0 32px 0;
+        }
 
+        .IconeInfo
+        {
+            min-height: 32px;
+            min-width: 32px;
+            border: solid 1px #d9d9d9;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+        }
 
-/* Cadre gris de aside */
+        .Gras
+        {
+            font-weight: bold;
 
-.CadreGrisAside
-{
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    width: 32%;
-    padding: 20px;
-    display: grid;
-    row-gap: 2rem;
-}
+        }
 
+        .CouleurEtoiles[data-active=true] 
+        {
+        color: #0065FC;
+        }
 
-.TitreAside
-{
-  margin: 20px 0px -40px 0px;
-  display: flex;
-  justify-content: space-between;
-}
-/* offres onglet aside */
-
-.OffresAside
-{
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 0 0 16px #0000002e;
-  transition-duration: 0.1s;
-  column-gap: 2rem;
-  padding: 0.375rem;
-  height: 73%;
-  
-}
-.OffresAside :hover
-{
-  transform: scale(1.05);
-}
-
-.Agencement
-{
-  display: flex;
-    align-items: stretch;
-    height: 100%;
-    overflow: auto;
-}
-.PhotosAside
-{
-  border-radius: 1rem 0 0 1rem;
-  
-}
-
-.CentrageTxt
-{
-  display: flex;
-  flex-direction: column;
-}
-
-.PlacementPrix
-{
-  margin: 0.25rem 0.75rem 0.25rem 0.75rem;
-}
-
-.EspaceVide
-{
-  flex: 1;
-}
-
-/* section activités a marseille */
-
-.Activites
-{
-    display: grid;
-    margin: 64px 0;
-}
-
-
-
-.BlocDesActivites
-{
-    
-  box-shadow: 0 0 20px #0000002e;
-  border-radius: 16px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  transition-duration: 0.1s;
-}
-
-.DimensionPhoto
-{
-  position: relative;
-  flex: 1;
-}
-
-.TaillePhoto
-{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.TitreActivite
-{
-  margin: 19px 24px;
-}
-
-.VieuxPort
-{
-    grid-row: 2/7;
-    grid-column: 1/2;
-}
-
-.FortDePomegues
-{
-    grid-column: 2/3;
-    grid-row: 2/5;
-}
-
-.ParcNationalDesCalanques
-{
-    grid-column: 3/4;
-    grid-row: 2/7;
-}
-
-.NotreDameDeLaGarde
-{
-    grid-column: 4/5;
-    grid-row: 2/3;
-}
-
-.IlesDuFrioul
-{
-    grid-column: 2/3;
-    grid-row: 6/7;
-}
-
-.ParcLongchamp
-{
-    grid-column: 4/5;
-    grid-row: 4/7;
-}
-
-
-#Footer
-{
-    background-color: #F2F2F2;
-    width: 100%;
-}
-
-.PlacementColonnes
-{
-  display: flex;
-  max-width: 100%;
-  width: 1440px;
-  margin: auto;
-  padding: 0 32px;
-  box-sizing: border-box; 
-}
-
-.Colonnes
-{
-  width: 30%;
-  padding: 32px 32px;
-}
+    .CouleurEtoiles [data-active=false] 
+        {
+            color: #d9d9d9;
+        }
