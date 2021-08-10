@@ -1,9 +1,11 @@
 @media all and (min-width: 601px)
 {
+
 body
-  {
-    
-  }
+{
+  margin: inherit;
+  max-width: 1440px;
+}
 
 .conteneurheader
   {
@@ -48,58 +50,66 @@ header ul li a:hover
 
 .ChampDeSaisie
   {
-      border-right: none;
-      border-left: none;
-      border-top: #F2F2F2 1px solid;
-      border-bottom: #F2F2F2 1px solid;
-      padding: 10% 100% 10% 100%;
-      width: 100%;
-      font-size: 14px;
-      font-weight: bold;
-    }
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 10% 100% 10% 100%;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-  .loupe
-    {
-      display: none;
-    }
+.loupe
+  {
+    display: none;
+  }
 
-  .BoutonRecherche
-    {
-      background-color: #0065FC;
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 0 13px 13px 0;
-      font-size: 100%;
-    }
+.BoutonRecherche
+  {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 13px 13px 0;
+    font-size: 100%;
+  }
 
-  .SectionFiltre
-    {
-      display: flex;
-      margin: 3% 0% 0% 0%;
-    }
-
-  .PlacementTitre
-    {
-      margin: 0% 0% 0% 10%;
-    }
-
-  .TitreFiltres
-    {
-      padding: 0% 1% 1% 1%;
-    }
-
-  .FormeFiltre
+.SectionFiltre
   {
     display: flex;
-    align-items: center;
-    border: 1px solid #d9d9d9;
-    border-radius: 32px;
-    transition-duration: 0.1s;
-    font-weight: bold;
-    margin: 0% 3% 2% 0%;
-    width: 15%;
+    margin: 3% 0% 0% 0%;
   }
+
+.PlacementFiltre
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+  }
+
+.PlacementTitre
+  {
+    padding: 5px;
+  }
+
+.TitreFiltres
+  {
+    padding: 0% 1% 1% 1%;
+  }
+
+.FormeFiltre
+{
+  display: flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 32px;
+  transition-duration: 0.1s;
+  font-weight: bold;
+  margin: 0px 10px 5px 0px;
+}
 
 .FormeFiltre:hover
 {
@@ -143,7 +153,7 @@ header ul li a:hover
         margin: 0 25px 0 0;
     }
 
-#Resultats
+.Resultats
   {
     display: flex;
     flex-direction: row;
@@ -157,14 +167,26 @@ header ul li a:hover
     border-radius: 20px;
     width: 30%;
     margin: 0 5px 20px 5px;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 0 10px #0000002e;
   }
+
+  .OffresMain:hover
+{
+  transform: scale(1.05);
+  
+}
 
 .PhotosMain
   {
     border-radius: 20px 20px 0 0;
-    width: 95%;
-    margin: 5px 5px 5px 5px;
+    
+    width: 230px;
+    height: 147px;
+    margin: 2% 2% 1% 2%;
+    object-fit: cover;
+    max-width: 96%;
+    max-height: 100%;
+
   }
 
   .OffresMain h4 
@@ -186,10 +208,16 @@ header ul li a:hover
 
 .CadreGrisAside
 {
-  border-radius: 15px;
+  border-radius: 20px;
   width: 32%;
   background-color: #f2f2f2;
   
+}
+
+.ResultatsAside
+{
+  display: flex;
+  flex-direction: column;
 }
 
 .TitreAside
@@ -204,7 +232,7 @@ header ul li a:hover
   {
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 16px #0000002e;
+    box-shadow: 0 0 10px #0000002e;
     transition-duration: 0.1s;
     margin: 0% 8% 8% 8%;   
   }
@@ -217,11 +245,19 @@ header ul li a:hover
     overflow: auto;
 }
 
+.OffresAside:hover
+{
+  transform: scale(1.05);
+  
+}
+
 .PhotosAside
 {
   border-radius: 20px 0px 0px 20px;
-  width: 100%;
-  margin: 5% 5% 2% 4%;
+    width: 130px;
+    height: 147px;
+    margin: 5% 5% 2% 4%;
+    object-fit: cover;
 }
 
 .PlacementTxt
@@ -242,10 +278,7 @@ header ul li a:hover
 
 .Activites
 {
-    display: grid;
-    column-gap: 2%;
     margin: 5% 0% 0% 2%;
-    
 }
 
 
@@ -259,63 +292,59 @@ header ul li a:hover
   transition-duration: 0.1s;
 }
 
+.CadreActivite:hover
+{
+  transform: scale(1.05);
+  
+}
 
-
-.DimensionPhoto
-
-  {
-    
-    
-    width: 100%;
-    object-fit: cover;
+.ResultatsActivites
+{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: stretch;
 }
 
 .TitreActivite
 {
-  margin: 5% 0% 0% 5%;
+  margin: 5% 0% 5% 5%;
 }
 
-.Placement
+.ResultatsActivites2
 {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto 14rem 2rem 2rem 2rem 14rem;
+  margin: 0% 2% 0% 2%;
+  display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
 }
 
-.VieuxPort
+.block4
 {
-  grid-column: 1/2;
-    grid-row: 2/6;
-    
+  margin: 0% 2% 0% 0%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.FortDePomegues
-{
-    grid-column: 2/3;
-    grid-row: 2/4;
+.DimensionPhoto
+
+  {
+    width: 100%;
+    object-fit: cover;
 }
+
+
+
+
+
 
 .ParcNationalDesCalanques
 {
-    grid-column: 3/4;
-    grid-row: 2/6;
-}
-
-.NotreDameDeLaGarde
-{
-    grid-column: 4/5;
-    grid-row: 2/3;
-}
-
-.IlesDuFrioul
-{
-    grid-column: 2/3;
-    grid-row: 5/6;
-}
-
-.ParcLongchamp
-{
-    grid-column: 4/5;
-    grid-row: 4/6;
+  margin: 0% 2% 0% 0%; 
 }
 
 
@@ -332,6 +361,7 @@ header ul li a:hover
   display: flex;
   box-sizing: border-box; 
   padding: 5% 0% 5% 5%;
+  margin: 5% 0% 0% 0%;
 }
 
 .Colonnes
