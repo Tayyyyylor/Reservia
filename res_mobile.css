@@ -6,36 +6,34 @@ body
 {
     margin: auto;
 }
-    .conteneurheader
-        {
-            display: block;
-            border-bottom: 2px solid #f2f2f2;
-        }
 
-    .navigation
-        {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-content: space-around;
-            margin-left: 0;
-            
-        }
+.conteneurheader
+{
+    display: block;
+    border-bottom: 2px solid #f2f2f2;
+}
 
-    nav ul
-        {
-            list-style: none;
-            display: flex;
-            margin: 4%;
-            padding: 0;
-        }
+.navigation
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-left: 0;
+}
 
-    nav li
-        {
-            padding: 0px 50px 0px 50px;
-            
-          
-        }
+nav ul
+{
+    list-style: none;
+    display: flex;
+    margin: 4%;
+    padding: 0;
+}
+
+nav li
+{
+    padding: 0px 50px 0px 50px;
+}
 
 header ul li
 {
@@ -43,264 +41,294 @@ header ul li
 }
         
 
-    .inscrire
-        {
-            position: absolute;
-            top: 3%;
-            right: 7%;
-            font-weight: bold;
-            font-size: smaller;
-        }
+.inscrire
+{
+    position: absolute;
+    top: 6%;
+    right: 9%;
+    font-weight: bold;
+    font-size: smaller;
+}
 
-    .TitrePrincipal
-        {
-            font-size: larger;
-        }
+.TitrePrincipal
+{
+    font-size: larger;
+}
 
-    .SousTitre
-        {
-            font-size: smaller;
-            margin: 0% 0% 9% 0%;
-        }
+.SousTitre
+{
+    font-size: smaller;
+    margin: 0% 0% 9% 0%;
+}
 
-    .search
-        {
-            margin: 3%;
-        
-        }
+.search
+{
+    margin: 3%;
+}
 
      
 
-    .IconeMap
-        {
-            background-color: #f2f2f2;
-            border-radius: 10px 0 0 10px;
-            padding: 10px 10px;
-            width: 15px;
-            text-align: center;
-        }    
+.IconeMap
+{
+    background-color: #f2f2f2;
+    border-radius: 10px 0 0 10px;
+    padding: 10px 10px;
+    width: 15px;
+    text-align: center;
+}    
 
-    .ChampDeSaisie
-        {
-            border-right: none;
-            border-left: none;
-            border-top: #F2F2F2 1px solid;
-            border-bottom: #F2F2F2 1px solid;
-            padding: 2%;
-            width: 224px;
-            font-size: 14px;
-            font-weight: bold;
-        }
+.ChampDeSaisie
+{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 2%;
+    width: 224px;
+    font-size: 14px;
+    font-weight: bold;
+}
 
-    button p
-        {
-            display: none;
-        }
+button p
+{
+    display: none;
+}
 
-    .loupe
-        {
-            display: flex;
-        }
+.loupe
+{
+    display: flex;
+}
 
-    .BoutonRecherche
-        {
-            border: none;
-            border-radius: 10px;
-            padding: 10px;
-            background-color: #0065FC;
-            color: white;
-        }
+.BoutonRecherche
+{
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #0065FC;
+    color: white;
+}
 
-    .SectionFiltre
-        {
-            display: flex;
-            flex-direction: column;
-            align-content: space-between;
-            flex-wrap: wrap;
-           
-        }
+.SectionFiltre
+{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
 
-    .PlacementTitre
+.PlacementTitre
+{
+    margin: 0% 0% 0% 10%;
+}
 
-        {
-            margin: 0% 0% 0% 10%;
-        }
-    .FormeFiltre
-        {
-        display: flex;
-        align-items: center;
-        border: 1px solid #d9d9d9;
-        border-radius: 32px;
-        transition-duration: 0.1s;
-        font-weight: bold;
-        margin: 0% 0% 2% 0%;
-        width: auto;
-        }
+.FormeFiltre
+{
+    display: flex;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 32px;
+    transition-duration: 0.1s;
+    font-weight: bold;
+    margin: 0% 0% 2% 0%;
+    width: auto;
+}
 
-    .IconeFiltre
-        {
-            background-color: #DEEBFF;
-            border-radius: 100%;
-            min-height: 56px;
-            min-width: 56px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-    
-
-   
-
-    .Main
-        {
-            flex-flow: row wrap-reverse;
-            display: flex;
-            flex-direction: row;
-            
-        }
-
-    .MainClass
-        {
-            margin: 3%;
-            width: 100%;
-            background-color: white;
-            padding: 0;
-          
-        }
+.IconeFiltre
+{
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    min-height: 56px;
+    min-width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
     
 
-    .OffresMain
-        {
-            border-radius: 20px;
-            width: 100%;
-            box-shadow: 0 0 10px #0000002e;
-            margin: 0% 0% 5% 0%;
-            
-        }
+   .Main
+{
+    flex-flow: row wrap-reverse;
+    display: flex;
+    flex-direction: row;
+}
 
-    .OffresMain h4
-        {
-            margin: 0 0 0 3%;
-        }
-
-    .OffresMain p 
-        {
-            margin: 1% 0 0 3%;
-        }
-
-    .IconeEtoilesNotation
-        {
-            margin: 7px 0 0 10px;
-            padding: 0% 0% 5% 0%;
-            font-size: small;
-        }
+.MainClass
+{
+    margin: 8%;
+    width: 100%;
+    background-color: white;
+    padding: 0;
+}
 
     
+.OffresMain
+{
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0 0 5px #0000002e;
+    margin: 0% 0% 5% 0%;
+}
 
-    .PhotosMain
-        {
-            border-radius: 20px 20px 0 0;
-            width: 97%;
-            margin: 5px 5px 5px 5px;
-        }
+.OffresMain h4
+{
+    margin: 0 0 0 3%;
+}
 
-    .CadreGrisAside
-        {
-            background-color: #f2f2f2;    
-            padding: 20px;
-            width: 100%;
-            border-radius: 0;
-            
-        }
+.OffresMain p 
+{
+    margin: 1% 0 0 3%;
+}
 
-    .TitreAside
-        {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+.IconeEtoilesNotation
+{
+    margin: 7px 0 0 10px;
+    padding: 0% 0% 5% 0%;
+    font-size: small;
+}
 
-    .OffresAside
-        {
-            background-color: white;
-            border-radius: 20px;
-            box-shadow: 0 0 10px #0000002e;
-            transition-duration: 0.1s;
-            margin: 0% 0% 3% 0%;
+    
+.PhotosMain
+{
+    border-radius: 20px 20px 0 0;
+    width: 97%;
+    margin: 5px 5px 5px 5px;
+    object-fit: cover;
+}
+
+.CadreGrisAside
+{
+    background-color: #f2f2f2;    
+    padding: 20px;
+    width: 100%;
+    border-radius: 0;
+}
+
+.TitreAside
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.OffresAside
+{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0000002e;
+    transition-duration: 0.1s;
+    margin: 0% 0% 3% 0%;
+}
+
+.Agencement
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+
+.PhotosAside
+{
+    border-radius: 20px 0 0 20px;
+    padding: 3% 0% 0% 3%;
+    object-fit: cover;
+}
+
+.PlacementTxt
+{
+    margin: 5% 3% 0% 10%;
+    font-size: small;
+}
+
+.IconeEtoilesNotationAside
+{
+    margin: 30% 3% 0% 10%;
+    font-size: small;
+}
         
-        }
-
-    .Agencement
-        {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            justify-content: flex-start;
-        }
+.IconeEtoilesNotationAside2
+{
+    margin: 18% 3% 0% 9%;
+    font-size: small;
+}
 
 
-    .PhotosAside
-        {
-            border-radius: 20px 0 0 20px;
-            padding: 3% 0% 0% 3%;
-        }
+.CentrageTxt
+{
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 
-    .PlacementTxt
-        {
-            margin: 5% 3% 0% 10%;
-            font-size: small;
-        }
+.Marge
+{
+    margin: 5%;
+}
 
-    .IconeEtoilesNotationAside
-        {
-            margin: 15% 3% 0% 10%;
-            font-size: small;
-        }
-    .IconeEtoilesNotationAside2
-        {
-            margin: 8% 3% 0% 9%;
-            font-size: small;
-        }
-    .CentrageTxt
-        {
-            display: flex;
-            align-content: flex-end;
-            flex-direction: column;
-            flex-wrap: wrap;
-        }
+.ResultatsActivites
+{
+    padding: 2%;
+}
 
-    .Marge
-        {
-            margin: 5%;
-        }
+.CadreActivite
+{
+    background-color: white;
+    box-shadow: 0 0 5px #0000002e;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0% 0% 8% 5%;
+}
 
-    .CadreActivite
-        {
-            background-color: white;
-            box-shadow: 0 0 10px #0000002e;
-            border-radius: 20px;
-            width: 94%;
-            margin: 0% 0% 5% 3%;
-        }
+.CadreActiviteNotreDame
+{
+    background-color: white;
+    box-shadow: 0 0 5px #0000002e;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0% 0% 8% 5%;
+}
 
-    .TitreActivite
-        {
-            margin: 5% 0% 0% 5%;
-            padding: 0% 0% 5% 0%;
-        }
+.CadreActiviteFortDePomegues
+{
+    background-color: white;
+    box-shadow: 0 0 5px #0000002e;
+    border-radius: 20px;
+    width: 90%;
+    margin: 0% 0% 8% 5%;
+}
 
-    .DimensionPhoto
-        {
-            border-radius: 20px 20px 0 0;
-            width: 100%;
-        
-        }
+.TitreActivite
+{
+    margin: 5% 0% 0% 5%;
+    padding: 0% 0% 5% 0%;
+}
 
-    .PlacementColonnes
-        {
-            background-color: #f2f2f2;    
-            padding: 20px;
-        }
+.DimensionPhoto
+{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.DimensionPhoto2
+{
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.PlacementColonnes
+{
+    background-color: #f2f2f2;    
+    padding: 10% 0% 0% 0%;
+}
+
+footer li 
+{
+padding: 0% 0% 2% 0%;
+}
+
 }

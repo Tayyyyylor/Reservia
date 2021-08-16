@@ -2,64 +2,77 @@
 /* La police */
 
 @font-face 
-  {
-    font-family: "Raleway";
-    src: url("Raleway-VariableFont_wght.ttf");
-    src: url("Raleway-Bold.ttf")
-  }
+{
+  font-family: Raleway, sans-serif;
+  src: url("Raleway-VariableFont_wght.ttf");
+  src: url("Raleway-Bold.ttf")
+}
 
-*
-  {
-    font-family: Raleway, Arial, Helvetica, sans-serif; 
-  }
+*  
+{
+  font-family: Raleway, sans-serif; 
+}
 
 a 
-  {
-    text-decoration: none;
-    color: black;
-  }
+{
+  text-decoration: none;
+  color: black;
+}
 
-  .BarreDeRecherche
+.inscriretablet
+{
+  color: #0065fc;
+}
+
+.BarreDeRecherche
   {
     display: inline-flex;
   }
 
-  .IconeBleu
-        {
-        color: blue;
-        }
+.IconeBleu
+{
+  color: blue;
+}
 
-    .PhraseInfo
-        {
-        display: flex;
-        align-items: center;
-        margin: 16px 0 32px 0;
-        }
+.PhraseInfo
+{
+  display: flex;
+  align-items: center;
+  margin: 16px 0 32px 0;
+}
 
-        .IconeInfo
-        {
-            min-height: 32px;
-            min-width: 32px;
-            border: solid 1px #d9d9d9;
-            border-radius: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 16px;
-        }
+.IconeInfo
+{
+  min-height: 32px;
+  min-width: 32px;
+  border: solid 1px #d9d9d9;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+}
 
-        .Gras
-        {
-            font-weight: bold;
+.Gras
+{
+  font-weight: bold;
+}
 
-        }
+.CouleurEtoiles[data-active=true] 
+{
+  color: #0065FC;
+}
 
-        .CouleurEtoiles[data-active=true] 
-        {
-        color: #0065FC;
-        }
+.CouleurEtoiles[data-active=false] 
+{
+  color: #d9d9d9;
+}
 
-    .CouleurEtoiles [data-active=false] 
-        {
-            color: #d9d9d9;
-        }
+.fas
+{
+  font-weight: 900;
+}
+.liste 
+{
+  list-style: none;
+}

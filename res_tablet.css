@@ -1,7 +1,6 @@
-@media all and (min-width: 1024px)
+@media all and (min-width: 601px) and (max-width: 1023px)
 {
-
-body
+    body
 {
   max-width: 1440px;
   margin: auto;
@@ -40,7 +39,10 @@ header ul li a:hover
     color: #0065fc;
   }
 
-
+  .inscriretablet
+  {
+    padding: 50%;
+  }
 
 .IconeMap
   {
@@ -177,10 +179,9 @@ header ul li a:hover
   {
     background-color: white;
     border-radius: 20px;
-    width: 32%;
-    height: 200px;
-    margin: 10px 10px 20px 0px;
-    box-shadow: 0 0 5px #0000002e;
+    width: 30%;
+    margin: 0 5px 20px 5px;
+    box-shadow: 0 0 10px #0000002e;
   }
 
   .OffresMain:hover
@@ -188,17 +189,6 @@ header ul li a:hover
   transform: scale(1.05);
   
 }
-
-.OffresMain h4 
-  {
-    margin: 0% 0% 0% 5%;
-  }
-
-.OffresMain p
-  {
-    margin: 1% 0% 0% 5%;
-    font-size: 14px;
-  }
 
 .DimPhoto
 {
@@ -216,16 +206,23 @@ header ul li a:hover
     width: 95%;
     margin: 3%;
     object-fit: cover;
-    height: 115px;
+    height: 143px;
     border-radius: 15px 15px 0px 0px;
   }
 
-  
+  .OffresMain h4 
+  {
+    margin: 0% 0% 0% 5%;
+  }
+
+  .OffresMain p
+  {
+    margin: 3% 0% 0% 5%;
+  }
 
   .IconeEtoilesNotation
   {
-    margin: 2% 0% 3% 5%;
-    font-size: 12px;
+    margin: 5% 0% 3% 5%;
   }
 
 
@@ -256,11 +253,9 @@ header ul li a:hover
   {
     background-color: white;
     border-radius: 20px;
-    box-shadow: 0 0 5px #0000002e;
+    box-shadow: 0 0 10px #0000002e;
     transition-duration: 0.1s;
-    margin: 0% 8% 8% 8%;
-    width: 90%;
-    height: 140px;  
+    margin: 0% 8% 8% 8%;   
   }
 
 .Agencement
@@ -280,34 +275,26 @@ header ul li a:hover
 .PhotosAside
 {
   border-radius: 20px 0px 0px 20px;
-  width: 130px;
-  height: 130px;
-  margin: 4% 0% 0% 4%;
-  object-fit: cover;
-}
-
-.CentrageTxt
-{
-  margin-left: 7%;
-}
-
-.PlacementTitre
-{
-  margin: 4% 0% 4% 0%;
+    width: 130px;
+    height: 160px;
+    margin: 5% 5% 2% 4%;
+    object-fit: cover;
 }
 
 .PlacementTxt
 {
-  margin: 0% 0% 20% 0%;
-  font-size: 14px;
+  margin: 5% 0% 0% 15%;
 }
 
 .IconeEtoilesNotationAside
 {
- font-size: 12px;
+  margin: 30% 5% 5% 15%;
 }
 
-
+.IconeEtoilesNotationAside2
+{
+  margin: 30% 5% 5% 15%;
+}
 
 
 .Activites
@@ -426,6 +413,6 @@ header ul li a:hover
 
 footer li 
 {
-  padding: 0% 0% 3% 0%;
+  padding: 0% 0% 5% 0%;
 }
 }
