@@ -2,9 +2,7 @@
 {
     body
 {
-  max-width: 1440px;
-  margin: auto;
-
+  width: max-content;
 }
 
 .conteneurheader
@@ -12,12 +10,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-size: xx-large;
     margin: 2%;
   }
 
 .navigation
   {
-    margin-left: 62%;
+    margin-left: 80%;
   }
 
 
@@ -39,7 +38,16 @@ header ul li a:hover
     color: #0065fc;
   }
 
-  .inscriretablet
+  .TitrePrincipal
+  {
+    font-size: xxx-large;
+  }
+.SousTitre
+{
+  font-size: xx-large;
+}
+
+  .styleinscrire
   {
     padding: 50%;
   }
@@ -72,6 +80,7 @@ header ul li a:hover
   {
     display: inline-flex;
     flex-direction: row;
+    font-size: xx-large;
     justify-content: center;
     align-items: stretch;
     align-content: center;
@@ -97,10 +106,11 @@ header ul li a:hover
 .PlacementFiltre
   {
     display: flex;
+    font-size: xx-large;
     flex-direction: row;
-    flex-wrap: wrap;
     align-content: center;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
 .PlacementTitre
@@ -111,17 +121,18 @@ header ul li a:hover
 .TitreFiltres
   {
     padding: 0% 1% 1% 1%;
+    font-size: xx-large;
   }
 
 .FormeFiltre
 {
   display: flex;
-  align-items: center;
-  border: 1px solid #d9d9d9;
-  border-radius: 32px;
-  transition-duration: 0.1s;
-  font-weight: bold;
-  margin: 0px 10px 5px 0px;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 40px;
+    transition-duration: 0.1s;
+    font-weight: bold;
+    margin: 0px 10px 5px 0px;
 }
 
 .FormeFiltre:hover
@@ -134,17 +145,23 @@ header ul li a:hover
 
   .IconeFiltre
         {
-            background-color: #DEEBFF;
-            border-radius: 100%;
-            min-height: 56px;
-            min-width: 56px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+          background-color: #DEEBFF;
+          border-radius: 100%;
+          min-height: 110px;
+          min-width: 110px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
 
  
-
+.PhraseInfo
+{
+  font-size: xx-large;
+    display: flex;
+    align-items: center;
+    margin: 16px 0 32px 0;
+}
   
 
 .search
@@ -155,16 +172,22 @@ header ul li a:hover
 .Main
 {
   display: flex;
-  margin: 2%;
+    margin: 4%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: stretch;
 }
 
   .MainClass
     {
-        background-color: #f2f2f2;
-        border-radius: 15px;
-        width: 62%;
-        padding: 20px;
-        margin: 0 40px 0 0;
+      background-color: #f2f2f2;
+      border-radius: 15px;
+      width: 62%;
+      padding: 20px;
+      margin: 0 100px 0 0;
     }
 
 .Resultats
@@ -255,7 +278,8 @@ header ul li a:hover
     border-radius: 20px;
     box-shadow: 0 0 10px #0000002e;
     transition-duration: 0.1s;
-    margin: 0% 8% 8% 8%;   
+    margin: 0% 8% 8% 8%;
+    width: 100%;
   }
 
 .Agencement
@@ -381,11 +405,183 @@ header ul li a:hover
   height: 80%;
 }
 
-
-.ParcNationalDesCalanques
+.ResultatsActivites
 {
-  margin: 0% 3% 0% 0%; 
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: center;
+  justify-content: center;
 }
+
+
+.CadreActiviteVieuxPort
+{
+    
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 450px;
+    width: 30%;
+}
+
+.DimensionPhotoVieuxPort
+{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ResultatsActivites2
+{
+  margin: 0% 5% 0% 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.CadreActiviteFortDePomegues
+{
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 250px;
+  width: 100%;
+}
+
+.DimensionPhotoFortDePomegues
+{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.CadreActiviteIlesDuFrioul
+{
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 170px;
+  margin-top: 30px;
+}
+
+.DimensionPhotoIlesDuFrioul
+{
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.CadreActiviteParcNationalDesCalanques
+{
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 450px;
+  width: 30%;
+}
+
+.DimensionPhotoParcNationalDesCalanques
+{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.block4
+{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.CadreActiviteNotreDame
+{
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 220px;
+    width: 70%;
+}
+
+.DimensionPhotoNotreDame
+{
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.CadreActiviteParcLongchamp
+{
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 190px;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.DimensionPhotoParcLongchamp
+{
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.CadreActiviteVieuxPort:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteFortDePomegues:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteIlesDuFrioul:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteParcNationalDesCalanques:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteNotreDame:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteParcLongchamp:hover
+{
+  transform: scale(1.05);
+}
+
+
+
+.TitreActivite
+{
+  margin: 5% 0% 5% 5%;
+  font-size: smaller;
+}
+
+
+
+ .CadreActiviteNotreDame
+ {
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 228px;
+ }
 
 
 

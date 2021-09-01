@@ -19,8 +19,11 @@ a
   color: black;
 }
 
-.inscriretablet
+
+
+.styleinscrire
 {
+  font-weight: bold;
   color: #0065fc;
 }
 
@@ -75,4 +78,9 @@ a
 .liste 
 {
   list-style: none;
+}
+
+.MargeTitreFiltre
+{
+   padding: 5px;
 }

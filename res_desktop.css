@@ -224,7 +224,7 @@ header ul li a:hover
 
   .IconeEtoilesNotation
   {
-    margin: 2% 0% 3% 5%;
+    margin: 5% 0% 3% 5%;
     font-size: 12px;
   }
 
@@ -242,6 +242,9 @@ header ul li a:hover
 {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .TitreAside
@@ -298,32 +301,63 @@ header ul li a:hover
 
 .PlacementTxt
 {
-  margin: 0% 0% 20% 0%;
+  margin: 0% 0% 20% 3%;
   font-size: 14px;
 }
 
 .IconeEtoilesNotationAside
 {
  font-size: 12px;
+ margin: 30% 0% 0% 0%;
 }
 
-
-
+.IconeEtoilesNotationAside2
+{
+font-size: 12px;
+margin-left: 3%;
+}
 
 .Activites
 {
     margin: 5% 0% 0% 3%;
 }
 
+.ResultatsActivites
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  align-content: center;
+  justify-content: center;
+}
 
 
-.CadreActivite
+.CadreActiviteVieuxPort
 {
     
   box-shadow: 0 0 10px #0000002e;
   border-radius: 20px;
   overflow: hidden;
   transition-duration: 0.1s;
+  height: 450px;
+    width: 30%;
+}
+
+.DimensionPhotoVieuxPort
+{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.ResultatsActivites2
+{
+  margin: 0% 5% 0% 5%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
 .CadreActiviteFortDePomegues
@@ -332,36 +366,130 @@ header ul li a:hover
   border-radius: 20px;
   overflow: hidden;
   transition-duration: 0.1s;
-  height: 320px;
+  height: 250px;
+  width: 100%;
 }
 
-.CadreActivite:hover
+.DimensionPhotoFortDePomegues
 {
-  transform: scale(1.05);
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.ResultatsActivites
+.CadreActiviteIlesDuFrioul
 {
-  display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: stretch;
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 170px;
+  margin-top: 30px;
 }
 
-.TitreActivite
+.DimensionPhotoIlesDuFrioul
 {
-  margin: 5% 0% 5% 5%;
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
 }
 
-.ResultatsActivites2
+.CadreActiviteParcNationalDesCalanques
 {
-  margin: 0% 3% 0% 3%;
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 450px;
+  width: 30%;
+}
+
+.DimensionPhotoParcNationalDesCalanques
+{
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.block4
+{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-content: center;
+  align-items: center;
 }
+
+.CadreActiviteNotreDame
+{
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 220px;
+    width: 70%;
+}
+
+.DimensionPhotoNotreDame
+{
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.CadreActiviteParcLongchamp
+{
+  box-shadow: 0 0 10px #0000002e;
+  border-radius: 20px;
+  overflow: hidden;
+  transition-duration: 0.1s;
+  height: 190px;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.DimensionPhotoParcLongchamp
+{
+  height: 140px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.CadreActiviteVieuxPort:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteFortDePomegues:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteIlesDuFrioul:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteParcNationalDesCalanques:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteNotreDame:hover
+{
+  transform: scale(1.05);
+}
+.CadreActiviteParcLongchamp:hover
+{
+  transform: scale(1.05);
+}
+
+
+
+.TitreActivite
+{
+  margin: 5% 0% 5% 5%;
+  font-size: smaller;
+}
+
+
 
  .CadreActiviteNotreDame
  {
@@ -371,34 +499,6 @@ header ul li a:hover
   transition-duration: 0.1s;
   height: 228px;
  }
-
-.block4
-{
-  margin: 0% 3% 0% 0%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.DimensionPhoto
-{
-  width: 100%;
-  object-fit: cover;
-}
-
-.DimensionPhoto2
-{
-  width: 100%;
-  object-fit: cover;
-  height: 80%;
-}
-
-
-.ParcNationalDesCalanques
-{
-  margin: 0% 3% 0% 0%; 
-}
 
 
 
